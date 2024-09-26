@@ -1,10 +1,7 @@
 import math
-
 def getWeight():
-  weight = float(input("Please enter your weight in pounds: "))
+  weight = float(input("Please Enter your weight in pounds: "))
   return weight
-
-
 def getHeight():
   inputString = input(
     "Please enter your height in feet and inches (ex: 5'8\"): ")
@@ -13,7 +10,6 @@ def getHeight():
   inches = float(splitString[1].strip('"'))
   height = (feet * 12) + inches
   return height
-
 
 def calculateBMI(weight, height):
   ### Convert height(inches) to meters
@@ -31,4 +27,4 @@ if __name__ == "__main__":
   height = getHeight()
 
   bmi = calculateBMI(weight, height)
-  print(f"Your final BMI is: {round(bmi, 2)}")
+  print(f"Your BMI is: {round(bmi, 2)} Thank you ")
